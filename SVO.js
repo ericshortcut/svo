@@ -2,7 +2,7 @@ const PermissionEngine = require('./PermissionEngine');
 const foldEngine = require('./foldEngine');
 
 module.exports.buildFacts = (facts)=>{
-    return facts.reduce((base,item)=>{
+    const indexActions = facts.reduce((base,item)=>{
         base[item.fact.action] = {
     
             setSubjectAndObject: (subject,object)=>{
@@ -17,4 +17,14 @@ module.exports.buildFacts = (facts)=>{
         return base;
     }
     , {});
+
+    return {
+        setAction: (action)=>{
+            if (indexActions[action]){
+                return indexActions[action];
+            }else{
+                throw `Action (${action}) not found`;
+            }
+        }
+    }
 };
