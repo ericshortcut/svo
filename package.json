@@ -1,0 +1,27 @@
+{
+  "name": "svo",
+  "version": "1.0.0",
+  "description": "Business Rule Engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericshortcut/svo.git"
+  },
+  "keywords": [
+    "rules",
+    "engine",
+    "foward",
+    "chainning",
+    "rule engine",
+    "facts"
+  ],
+  "author": "Eric Andrade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericshortcut/svo/issues"
+  },
+  "homepage": "https://github.com/ericshortcut/svo#readme"
+}
