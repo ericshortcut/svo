@@ -1,6 +1,6 @@
 {
   "name": "svo",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Business Rule Engine",
   "main": "index.js",
   "scripts": {
