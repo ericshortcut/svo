@@ -1,0 +1,26 @@
+---
+templates:
+  admin_rule:
+    rules: &admin_rules
+      "[subject.profile === 'system_adm']":
+      "[subject.profile === 'system_adm2']":
+  location_rules:
+    rules: &other
+      - "[object.state === 'NY', subject.profile === 'warehouse_manager']" #1
+      - "[object.state === 'NY' && subject.profile === 'warehouse_manager']" #2
+      - "[object.state === 'NY' AND subject.profile === 'warehouse_manager']" #3
+facts:
+  - action: register_books
+    label: Register books
+    rules:
+      <<: *admin_rules
+      "[subject.profile === 'system_adm3']":
+      "[subject.profile === 'system_adm4']":
+
+  - action: register_users
+    label: Register Users
+    rules:
+      - "[subject.profile === 'system_adm']" #1
+      - "equals(subject(profile),'system_adm')" #2
+      - "subject(profile).equals('system_adm')" #3
+      - "[subject.age > 18, subject.profile === 'system_adm', object.location === NYC]"
