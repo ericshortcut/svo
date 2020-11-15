@@ -1,7 +1,10 @@
+![](https://img.shields.io/npm/dt/svo) ![](https://img.shields.io/npm/v/svo) ![](https://travis-ci.org/ericshortcut/svo.svg?branch=master)
+https://travis-ci.org/ericshortcut/svo.svg?branch=master
+
 # SVO - Subject Verb Object (Business Rule Engine)
 
 It's a Business Rule Engine for nodejs projects. You just input facts and run it.
-It's based on the **linguistic typology** and can be used in many scenarios - even though it's **very specific* or broadly
+It's based on the **linguistic typology** and can be used in many scenarios - even though it's \*_very specific_ or broadly
 
 ## Getting Started
 
@@ -11,7 +14,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 You need to install nodejs and npm
 
- - [Downloading and installing Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- [Downloading and installing Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ### Installing the lib
 
@@ -20,6 +23,7 @@ To add the lib to your project just use npm
 ```
 npm install --save svo
 ```
+
 Done, now lets import to the code, write some **facts**
 
 ```
@@ -43,9 +47,11 @@ const facts = [{
     }
 }];
 ```
+
 Then we write the function `SVO.buildFacts` and pass the subject and object of the action (whichever you want try out ).
 Let`s say we have the following scenario:
-> Some user (John Doe) wants to register a book. So the request **action** comes from the endpoint and **subject** from request session, or token (E.g. JWT), and  the body is the actual **object**.
+
+> Some user (John Doe) wants to register a book. So the request **action** comes from the endpoint and **subject** from request session, or token (E.g. JWT), and the body is the actual **object**.
 
 ```
 //index.js
@@ -75,7 +81,7 @@ Let`s say we have the following scenario:
             console.log(`\n>>> User "${s.name}" does not have access. `);
         }
         );
-    
+
 })();
 
 (function testBookRegisteringBySystemAdm() {
@@ -135,6 +141,7 @@ Let`s say we have the following scenario:
         );
 })();
 ```
+
 and then run it `node index.js` or `npm start`
 
 ```
@@ -163,8 +170,8 @@ undefined
 
 ## Built With
 
-* [node](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [npm](https://maven.apache.org/) - Dependency Management
+- [node](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+- [npm](https://maven.apache.org/) - Dependency Management
 
 ## Contributing (future)
 
@@ -172,13 +179,14 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning (future)
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Authors
 
-* **Eric Andrade** - 
+- **Eric Andrade** -
 
 ### Contributors (future)
+
 See also the list of [contributors](https://github.com/ericshortcut/svo/contributors) who participated in this project.
 
 ## License (future)
@@ -187,6 +195,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Inspiration : linguistic typology
-
-
+- Inspiration : linguistic typology
