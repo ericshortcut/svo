@@ -1,10 +1,11 @@
 {
   "name": "svo",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Business Rule Engine",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "mocha",
+    "debug": "node --inspect temp.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/ericshortcut/svo/issues"
   },
-  "homepage": "https://github.com/ericshortcut/svo#readme"
+  "homepage": "https://github.com/ericshortcut/svo#readme",
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  }
 }

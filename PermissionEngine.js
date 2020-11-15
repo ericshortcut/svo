@@ -26,16 +26,18 @@ module.exports = class PermissionEngine {
     }
 
     validateAll(toBeValidated) {
-        return toBeValidated.reduce((acc,v,index)=>{
-            return (index === 0 ? v : acc && v)
-        }
-        , false);
+        return toBeValidated.every(check => check)
+        // return toBeValidated.reduce((acc,v,index)=>{
+        //     return (index === 0 ? v : acc && v)
+        // }
+        // , false);
     }
     validateOr(toBeValidated) {
-        return toBeValidated.reduce((acc,v,index)=>{
-            return acc || v;
-        }
-        , false);
+        return toBeValidated.some(check => check)
+        // return toBeValidated.reduce((acc,v,index)=>{
+        //     return acc || v;
+        // }
+        // , false);
     }
 
 }
