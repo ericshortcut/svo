@@ -1,5 +1,4 @@
-![](https://img.shields.io/npm/dt/svo) ![](https://img.shields.io/npm/v/svo) ![](https://travis-ci.org/ericshortcut/svo.svg?branch=master)
-https://travis-ci.org/ericshortcut/svo.svg?branch=master
+![NPM Downloads](https://img.shields.io/npm/dt/svo) ![NPM Version](https://img.shields.io/npm/v/svo) ![Travis CI](https://travis-ci.org/ericshortcut/svo.svg?branch=master)
 
 # SVO - Subject Verb Object (Business Rule Engine)
 
